@@ -189,8 +189,199 @@ header .themeSelector .activeTheme {
   cursor: pointer;
 }
 
+/* Tablet and below */
 @media only screen and (max-width: 800px) {
   .showTask li {
     width: 100%;
+  }
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 600px) {
+  .App {
+    padding: 5px 8px;
+  }
+
+  header {
+    min-height: 60px;
+    flex-direction: column;
+    gap: 15px;
+    padding: 12px;
+    margin-bottom: 40px;
+  }
+
+  header .logo {
+    width: 100%;
+    justify-content: center;
+  }
+
+  header .logo img {
+    max-width: 35px;
+  }
+
+  header .logo span {
+    font-size: 20px;
+  }
+
+  header .themeSelector {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  header .themeSelector span {
+    height: 25px;
+    width: 25px;
+  }
+
+  header .themeSelector .activeTheme {
+    height: 32px;
+    width: 32px;
+  }
+
+  .addTask {
+    padding: 15px 10px;
+    margin: 15px auto;
+  }
+
+  .addTask form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .addTask form input {
+    width: 100%;
+    padding: 10px 8px;
+    font-size: 16px;
+  }
+
+  .addTask form button {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .showTask {
+    padding: 15px 10px;
+    margin: 15px auto;
+  }
+
+  .showTask div.head {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+  }
+
+  .showTask div.head div {
+    text-align: center;
+  }
+
+  .showTask .title {
+    font-size: 16px;
+  }
+
+  .showTask .count {
+    padding: 4px 9px;
+    margin-left: 8px;
+    font-size: 14px;
+  }
+
+  .showTask .clearAll {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+
+  .showTask ul {
+    margin: 20px 0px 15px 0px;
+    gap: 12px;
+  }
+
+  .showTask li {
+    padding: 12px 8px;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .showTask li .name {
+    font-size: 16px;
+  }
+
+  .showTask li .time {
+    font-size: 11px;
+  }
+
+  .showTask i.bi-pencil-square,
+  .showTask i.bi-trash {
+    font-size: 20px;
+    padding: 5px;
+  }
+}
+
+/* Small mobile devices */
+@media only screen and (max-width: 400px) {
+  .App {
+    padding: 5px;
+  }
+
+  header {
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+
+  header .logo span {
+    font-size: 18px;
+  }
+
+  header .themeSelector span {
+    height: 22px;
+    width: 22px;
+    margin-left: 3px;
+  }
+
+  header .themeSelector .activeTheme {
+    height: 28px;
+    width: 28px;
+  }
+
+  .addTask {
+    padding: 12px 8px;
+  }
+
+  .addTask form input {
+    font-size: 15px;
+    padding: 9px 7px;
+  }
+
+  .addTask form button {
+    font-size: 15px;
+    padding: 9px 15px;
+  }
+
+  .showTask {
+    padding: 12px 8px;
+  }
+
+  .showTask .title {
+    font-size: 15px;
+  }
+
+  .showTask li {
+    padding: 10px 7px;
+  }
+
+  .showTask li .name {
+    font-size: 15px;
+    padding-bottom: 3px;
+  }
+
+  .showTask li .time {
+    font-size: 10px;
+  }
+
+  .showTask i.bi-pencil-square,
+  .showTask i.bi-trash {
+    font-size: 18px;
   }
 }

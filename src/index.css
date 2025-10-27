@@ -65,6 +65,7 @@
       #00c9b1 100%
     );
   background-blend-mode: soft-light, screen, darken, normal;
+  transition: all 500ms;
 }
 
 .gThree {
@@ -92,5 +93,6 @@
       #4a266a 100%
     );
   background-blend-mode: overlay, overlay, normal;
+  transition: all 500ms;
 }
 /* themes */
