@@ -2,6 +2,12 @@ const AddTask = ({ taskList, setTaskList, task, setTask }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // Validation: Prevent adding empty tasks
+    if (!e.target.task.value.trim()) {
+      alert("Task cannot be empty!");
+      return;
+    }
+
     if (task.id) {
       const date = new Date();
       const updatedTask = taskList.map((todo) =>
